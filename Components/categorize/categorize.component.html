@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div>
+  <input [(ngModel)]="query" placeholder="Kitap ara..." />
+  <button (click)="onSearch()">Ara</button>
+</div>
+
+<ul>
+  <li *ngFor="let book of books">
+    <strong>{{ book.Title }}</strong> - {{ book.Author }} ({{ book.Year }}) ({{book.est_rating}})
+  </li>
+</ul>
+
+<app-footer></app-footer>

@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div class="container">
+  <h2>Kitap Listesi</h2>
+
+  <!-- Kitap Listesi (Kartlar halinde) -->
+  <div class="book-list">
+    <app-book-card *ngFor="let book of sortedBooks" [book]="book"></app-book-card>
+  </div>
+
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,26 @@
+.book-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  transition: transform 0.2s ease;
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.book-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}

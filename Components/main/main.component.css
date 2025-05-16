@@ -1,0 +1,71 @@
+/* Genel Container Stil */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Kitap Listesi için Stil */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Kitap Kartı Stil */
+.book-card {
+  border: 1px solid #ccc;
+  border-left: 4px solid #2196F3;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Kitap Kartı Üzerine Hover Efekti */
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Arama ve Sıralama Bölmesi */
+.search-sort-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+/* Arama ve Sıralama Giriş Alanları */
+.search-sort-container input,
+.search-sort-container select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-width: 200px;
+  width: auto;
+  transition: border-color 0.3s ease;
+}
+
+/* Arama ve Sıralama Giriş Alanlarına Hover ve Focus Efekti */
+.search-sort-container input:focus,
+.search-sort-container select:focus {
+  border-color: #2196F3;
+  outline: none;
+}
+
+/* Responsive Tasarım - Kitap Kartları */
+@media (max-width: 768px) {
+  .book-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
